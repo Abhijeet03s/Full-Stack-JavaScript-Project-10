@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html{
+  height: 70%;
+}
+body {
+  height: 100%;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) , url("/images/bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  margin: 20px 70px 0px;
+  padding: 20px 30px;
+}
+
+/*Navbar Section*/
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+}
+.phone-img {
+  position: relative;
+  left: 53rem;
+  top: 0.5em;
+}
+.list-item {
+  margin: auto 50px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  list-style: none;
+}
+.nav-items li:last-child {
+    width: 9em;
+    overflow-wrap: break-word;
+}
+
+/* Hero Section */
+
+hr {
+  width: 75%;
+  position: relative;
+  top: 2em;
+  left: 17em;
+  
+}
+h1 {
+  position: relative;
+  top: 2em;
+  left: 0.5em;
+  width: 50%;
+  font-size: 60px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.img-quote {
+  position: relative;
+  background: #304556;
+  left: 60em;
+  bottom: 3em;
+  width: 20%;
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.img-quote h4 {
+  margin: 10px auto;
+  font-weight: 300;
+}
+.img-quote img {
+  border-radius: 50px;
+  width: 25%;
+}
+.img-quote2 {
+  position: relative;
+  background: #304556;
+  left: 35em;
+  top: 5em;
+  width: 20%;
+  padding: 20px 30px;
+  color: #fff;
+}
+.img-quote2 h4 {
+  margin: 10px auto;
+  color: #fff;
+  font-weight: 300;
+}
+.img-quote2 img {
+  border-radius: 10px;
+  width: 25%;
+  background-color: #fff;
+}
+.button-bottom {
+  position: relative;
+  bottom: 5em;
+  left: 1em;
+  width: 20%;
+  font-size: 25px;
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 20px 5px;
+  border-radius: 40px;
+}
+
+.line {
+  width: 2px;
+  height: 80px;
+  background-color: #fff;
+}
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.lines {
+  position: absolute;
+  top: 20em;
+  right: 21em;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.line1 {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.circle1 {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.lines1 {
+  position: absolute;
+  top: 34em;
+  right: 32em;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
