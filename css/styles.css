@@ -5,161 +5,285 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-html{
-  height: 70%;
-}
+
 body {
-  height: 100%;
-  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) , url("/images/bg-image.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/images/bg-image.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #ffffff;
 }
 
-.container {
-  margin: 20px 70px 0px;
-  padding: 20px 30px;
+button {
+  cursor: pointer;
 }
 
-/*Navbar Section*/
-
-.navbar {
+nav {
+  padding: 3% 6%;
   display: flex;
-  justify-content: space-around;
-}
-.nav-items {
-  display: flex;
-  justify-content: center;
-}
-.phone-img {
-  position: relative;
-  left: 53rem;
-  top: 0.5em;
-}
-.list-item {
-  margin: auto 50px;
-  font-size: 17px;
-  font-weight: 600;
-  color: #fff;
-  list-style: none;
-}
-.nav-items li:last-child {
-    width: 9em;
-    overflow-wrap: break-word;
-}
-
-/* Hero Section */
-
-hr {
-  width: 75%;
-  position: relative;
-  top: 2em;
-  left: 17em;
-  
-}
-h1 {
-  position: relative;
-  top: 2em;
-  left: 0.5em;
-  width: 50%;
-  font-size: 60px;
-  color: #fff;
-  letter-spacing: 2px;
-}
-.img-quote {
-  position: relative;
-  background: #304556;
-  left: 60em;
-  bottom: 3em;
-  width: 20%;
-  padding: 20px 30px;
-  color: #fff;
-}
-
-.img-quote h4 {
-  margin: 10px auto;
-  font-weight: 300;
-}
-.img-quote img {
-  border-radius: 50px;
-  width: 25%;
-}
-.img-quote2 {
-  position: relative;
-  background: #304556;
-  left: 35em;
-  top: 5em;
-  width: 20%;
-  padding: 20px 30px;
-  color: #fff;
-}
-.img-quote2 h4 {
-  margin: 10px auto;
-  color: #fff;
-  font-weight: 300;
-}
-.img-quote2 img {
-  border-radius: 10px;
-  width: 25%;
-  background-color: #fff;
-}
-.button-bottom {
-  position: relative;
-  bottom: 5em;
-  left: 1em;
-  width: 20%;
-  font-size: 25px;
-  background: transparent;
-  color: #fff;
-  border: 3px solid #fff;
-  padding: 20px 5px;
-  border-radius: 40px;
-}
-
-.line {
-  width: 2px;
-  height: 80px;
-  background-color: #fff;
-}
-
-.circle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border-radius: 30px;
-}
-
-.lines {
-  position: absolute;
-  top: 20em;
-  right: 21em;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.line1 {
-  width: 100px;
-  height: 2px;
-  background-color: #fff;
-}
-
-.circle1 {
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border-radius: 30px;
-  position: absolute;
-}
-
-.lines1 {
-  position: absolute;
-  top: 34em;
-  right: 32em;
-  z-index: -1;
-  display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 40px;
+}
+
+.list-item {
+  list-style: none;
+  margin-right: 60px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.list-item:last-child {
+  margin-right: 0;
+}
+
+.phone-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-image img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 100px;
+}
+
+.hero {
+  font-size: 35px;
+  font-weight: 900;
+  width: 40%;
+}
+
+.btn {
+  color: #ffffff;
+  background: transparent;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+.idea-card {
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+  width: 260px;
+}
+
+.plugin-card {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 260px;
+}
+
+.card {
+  background-color: rgb(48, 70, 87, 0.7);
+  padding: 20px;
+}
+
+.card div {
+  background-color: #ffffff;
+  width: 80px;
+  border-radius: 30px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  padding: 5px 18px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.circle-1,
+.circle-2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.circle-1 {
+  position: absolute;
+  top: 53%;
+  right: 15%;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 70%;
+  right: 24%;
+}
+
+.line-1 {
+  position: absolute;
+  width: 1px;
+  top: 45%;
+  right: 15.7%;
+  height: 9%;
+  background-color: #ffffff;
+}
+
+.line-2 {
+  position: absolute;
+  width: 5%;
+  top: 71%;
+  right: 25%;
+  height: 1px;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 1200px) {
+  nav {
+    padding: 2% 4%;
+  }
+  nav .list-items {
+    padding-bottom: 30px;
+  }
+  nav .list-item {
+    margin-right: 40px;
+  }
+  section {
+    padding: 4% 6%;
+  }
+  section .hero {
+    font-size: 32px;
+  }
+  .line-1 {
+    top: 42.5%;
+    right: 16%;
+  }
+  .circle-1 {
+    top: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 32px;
+  }
+  .list-item {
+    margin-right: 20px;
+  }
+  .list-items {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .hero {
+    font-size: 30px;
+  }
+  .btn {
+    padding: 12px 30px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .idea-card {
+    bottom: 15%;
+    right: 20%;
+    width: 220px;
+  }
+  .plugin-card {
+    top: 20%;
+    right: 5%;
+    width: 200px;
+  }
+  .card {
+    padding: 15px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .circle-1 {
+    top: 50%;
+    right: 10%;
+  }
+  .circle-2 {
+    top: 69.5%;
+    right: 10%;
+  }
+  .line-1 {
+    top: 43%;
+    right: 11.5%;
+    height: 8%;
+  }
+  .line-2 {
+    width: 8%;
+    right: 12%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero {
+    font-size: 20px;
+    width: 100%;
+  }
+  .btn {
+    padding: 10px 24px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .card p {
+    margin-top: 10px;
+  }
+  .idea-card {
+    bottom: 5%;
+    right: 50%;
+    width: 200px;
+  }
+  .plugin-card {
+    top: 40%;
+    right: 3%;
+    width: 180px;
+  }
+  .circle-1 {
+    top: 68%;
+  }
+  .circle-2 {
+    top: 78.5%;
+    right: 32%;
+  }
+  .line-1 {
+    top: 61.5%;
+    right: 12%;
+    height: 8%;
+  }
+  .line-2 {
+    top: 80%;
+    right: 35.5%;
+    width: 14%;
+  }
 }
