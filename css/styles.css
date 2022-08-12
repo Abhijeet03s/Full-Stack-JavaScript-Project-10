@@ -169,7 +169,7 @@ section {
 }
 @media only screen and (max-width: 1200px) {
   nav {
-    padding: 2% 4%;
+    padding: 4%;
   }
   nav .list-items {
     padding-bottom: 30px;
@@ -184,11 +184,12 @@ section {
     font-size: 32px;
   }
   .line-1 {
-    top: 42.5%;
+    top: 45%;
     right: 16%;
   }
   .circle-1 {
-    top: 50%;
+    top: 53%;
+    right: 15%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -270,19 +271,19 @@ section {
     width: 180px;
   }
   .circle-1 {
-    top: 68%;
+    top: 66%;
   }
   .circle-2 {
-    top: 78.5%;
+    top: 81.5%;
     right: 32%;
   }
   .line-1 {
-    top: 61.5%;
+    top: 59%;
     right: 12%;
     height: 8%;
   }
   .line-2 {
-    top: 80%;
+    top: 83%;
     right: 35.5%;
     width: 14%;
   }
